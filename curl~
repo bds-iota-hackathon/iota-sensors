@@ -1,0 +1,35 @@
+#!/bin/bash
+
+set -ex
+
+adres=http://p101.iotaledger.net:14700
+
+curl ${adres} \
+  -X POST \
+  -H 'Content-Type: application/json' \
+  -H 'X-IOTA-API-Version: 1' \
+  -d '{"command": "getBalances", "addresses": ["ZIXBNJGKOZZHL9XMUYESGIRXOGNTJBDPBHXWRPACRL9AGDJYGWH9XKHANJTRGCP9ANBIEXUQSII9JOOWD"], "threshold": 100}'
+
+curl ${adres} \
+  -X POST \
+  -H 'Content-Type: application/json' \
+  -H 'X-IOTA-API-Version: 1' \
+  -d '{"command": "getBalances", "addresses": ["PYSFOYYDNGZPDUDMZJUKLDDBMYUJWAOKCEHLFEKQEGCJERWZ9QON9ZYYOKXZKLUBUQGRKDCPGWTQA9ICW"], "threshold": 100}'
+
+curl ${adres} \
+  -X POST \
+  -H 'Content-Type: application/json' \
+  -H 'X-IOTA-API-Version: 1' \
+  -d '{"command": "getBalances", "addresses": ["DMFLJTEUQUHVBKDWRPEQWLCJZIZZUHDOMTRZSDHRWVJFPZPQLXAHQPVWEATOOVVOVOOBAFLKHCKNRMVE9"], "threshold": 100}'
+
+curl ${adres} \
+  -X POST \
+  -H 'Content-Type: application/json' \
+  -H 'X-IOTA-API-Version: 1' \
+  -d '{"command": "getBalances", "addresses": ["WWPJTKWJUEVDTCOAJBHRZVRVXAZDEAA9LILHUX9WUKBEYMGHZVQUNIZNONHLETSOUHZVGSPASVWVOSSMA"], "threshold": 100}'
+
+curl ${adres} \
+  -X POST \
+  -H 'Content-Type: application/json' \
+  -H 'X-IOTA-API-Version: 1' \
+  -d '{"command": "getBalances", "addresses": ["PYOMTYDIJKOYTYXBSCYXHHJJUGMRYBWKNTSYXZVEXEPOOBCSK9VHQPVRFIZCOTUBKZMSTFYO9YYIXRQIW"], "threshold": 100}'

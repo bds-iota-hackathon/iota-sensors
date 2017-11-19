@@ -1,0 +1,5 @@
+1. Send transfer
+2. find transactions for source wallet -> hashes
+3a. get trytes for hashes
+3b. get branch and trunk transactions to approve
+4. attatch to tangle 

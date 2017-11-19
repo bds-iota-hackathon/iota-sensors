@@ -1,0 +1,1 @@
+cd ~/Dokumenty/iota/ && workon iota && python client.py client3

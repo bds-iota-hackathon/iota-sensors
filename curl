@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -ex
+
+adres=http://p101.iotaledger.net:14700
+
+curl ${adres} \
+  -X POST \
+  -H 'Content-Type: application/json' \
+  -H 'X-IOTA-API-Version: 1' \
+  -d '{"command": "getBalances", "addresses": ["ZIXBNJGKOZZHL9XMUYESGIRXOGNTJBDPBHXWRPACRL9AGDJYGWH9XKHANJTRGCP9ANBIEXUQSII9JOOWD"], "threshold": 100}'
+
+curl ${adres} \
+  -X POST \
+  -H 'Content-Type: application/json' \
+  -H 'X-IOTA-API-Version: 1' \
+  -d '{"command": "getBalances", "addresses": ["PYOMTYDIJKOYTYXBSCYXHHJJUGMRYBWKNTSYXZVEXEPOOBCSK9VHQPVRFIZCOTUBKZMSTFYO9YYIXRQIW"], "threshold": 100}'

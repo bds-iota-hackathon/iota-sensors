@@ -1,0 +1,11 @@
+TODO:
+
+* "broadcasting" info about location, available sensors, price
+* parsing communications
+* MAM for identifying 0i senders?
+
+Upgrades:
+
+* Validating if payments are in proper amount
+* Quality of service - ensure that every paying wallet received requested data
+* Public Sensors network explorer
