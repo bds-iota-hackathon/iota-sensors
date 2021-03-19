@@ -20,7 +20,7 @@ ipaddress==1.0.18
 ipykernel==4.6.1
 ipython==5.5.0
 ipython-genutils==0.2.0
-Jinja2==2.10
+Jinja2==2.11.3
 jsonschema==2.6.0
 jupyter-client==5.1.0
 jupyter-core==4.4.0
